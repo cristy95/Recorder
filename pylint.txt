@@ -1,8 +1,12 @@
 ************* Module Recorder.recorder.teamlist
-recorder/teamlist.py:3: [C0111(missing-docstring), TeamList] Missing class docstring
-recorder/teamlist.py:7: [C0111(missing-docstring), TeamList.add_team] Missing method docstring
-recorder/teamlist.py:10: [C0111(missing-docstring), TeamList.get_score] Missing method docstring
-recorder/teamlist.py:13: [C0111(missing-docstring), TeamList.add_score] Missing method docstring
+recorder/teamlist.py:21: [W0312(mixed-indentation), ] Found indentation with tabs instead of spaces
+recorder/teamlist.py:22: [W0312(mixed-indentation), ] Found indentation with tabs instead of spaces
+recorder/teamlist.py:23: [W0312(mixed-indentation), ] Found indentation with tabs instead of spaces
+recorder/teamlist.py:24: [W0312(mixed-indentation), ] Found indentation with tabs instead of spaces
+recorder/teamlist.py:26: [W0312(mixed-indentation), ] Found indentation with tabs instead of spaces
+recorder/teamlist.py:27: [W0312(mixed-indentation), ] Found indentation with tabs instead of spaces
+recorder/teamlist.py:28: [W0312(mixed-indentation), ] Found indentation with tabs instead of spaces
+recorder/teamlist.py:29: [W0312(mixed-indentation), ] Found indentation with tabs instead of spaces
 ************* Module Recorder.recorder.team
 recorder/team.py:4: [W0312(mixed-indentation), ] Found indentation with tabs instead of spaces
 recorder/team.py:5: [W0312(mixed-indentation), ] Found indentation with tabs instead of spaces
@@ -15,52 +19,22 @@ Report
 ======
 21 statements analysed.
 
-Messages by category
---------------------
+Statistics by type
+------------------
 
-+-----------+-------+---------+-----------+
-|type       |number |previous |difference |
-+===========+=======+=========+===========+
-|convention |5      |5        |=          |
-+-----------+-------+---------+-----------+
-|refactor   |1      |1        |=          |
-+-----------+-------+---------+-----------+
-|warning    |3      |4        |-1.00      |
-+-----------+-------+---------+-----------+
-|error      |0      |0        |=          |
-+-----------+-------+---------+-----------+
-
-
-
-% errors / warnings by module
------------------------------
-
-+-----------------------+------+--------+---------+-----------+
-|module                 |error |warning |refactor |convention |
-+=======================+======+========+=========+===========+
-|Recorder.recorder.team |0.00  |100.00  |100.00   |20.00      |
-+-----------------------+------+--------+---------+-----------+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |3      |3          |=          |100.00      |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|class    |2      |2          |=          |50.00       |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|method   |5      |5          |=          |100.00      |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|function |0      |0          |=          |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
 
 
-
-Messages
---------
-
-+-----------------------+------------+
-|message id             |occurrences |
-+=======================+============+
-|missing-docstring      |5           |
-+-----------------------+------------+
-|mixed-indentation      |3           |
-+-----------------------+------------+
-|too-few-public-methods |1           |
-+-----------------------+------------+
-
-
-
-Global evaluation
------------------
-Your code has been rated at 5.71/10 (previous run: 5.24/10, +0.48)
 
 Duplication
 -----------
@@ -75,37 +49,69 @@ Duplication
 
 
 
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |1      |5        |-4.00      |
++-----------+-------+---------+-----------+
+|refactor   |1      |1        |=          |
++-----------+-------+---------+-----------+
+|warning    |11     |3        |+8.00      |
++-----------+-------+---------+-----------+
+|error      |0      |0        |=          |
++-----------+-------+---------+-----------+
+
+
+
+% errors / warnings by module
+-----------------------------
+
++---------------------------+------+--------+---------+-----------+
+|module                     |error |warning |refactor |convention |
++===========================+======+========+=========+===========+
+|Recorder.recorder.teamlist |0.00  |72.73   |0.00     |0.00       |
++---------------------------+------+--------+---------+-----------+
+|Recorder.recorder.team     |0.00  |27.27   |100.00   |100.00     |
++---------------------------+------+--------+---------+-----------+
+
+
+
+Messages
+--------
+
++-----------------------+------------+
+|message id             |occurrences |
++=======================+============+
+|mixed-indentation      |11          |
++-----------------------+------------+
+|too-few-public-methods |1           |
++-----------------------+------------+
+|missing-docstring      |1           |
++-----------------------+------------+
+
+
+
+Global evaluation
+-----------------
+Your code has been rated at 3.81/10 (previous run: 5.71/10, -1.90)
+
 Raw metrics
 -----------
 
 +----------+-------+------+---------+-----------+
 |type      |number |%     |previous |difference |
 +==========+=======+======+=========+===========+
-|code      |25     |86.21 |25       |=          |
+|code      |25     |73.53 |25       |=          |
 +----------+-------+------+---------+-----------+
-|docstring |3      |10.34 |3        |=          |
+|docstring |8      |23.53 |3        |+5.00      |
 +----------+-------+------+---------+-----------+
 |comment   |0      |0.00  |0        |=          |
 +----------+-------+------+---------+-----------+
-|empty     |1      |3.45  |1        |=          |
+|empty     |1      |2.94  |1        |=          |
 +----------+-------+------+---------+-----------+
-
-
-
-Statistics by type
-------------------
-
-+---------+-------+-----------+-----------+------------+---------+
-|type     |number |old number |difference |%documented |%badname |
-+=========+=======+===========+===========+============+=========+
-|module   |3      |3          |=          |100.00      |0.00     |
-+---------+-------+-----------+-----------+------------+---------+
-|class    |2      |2          |=          |0.00        |0.00     |
-+---------+-------+-----------+-----------+------------+---------+
-|method   |5      |5          |=          |40.00       |0.00     |
-+---------+-------+-----------+-----------+------------+---------+
-|function |0      |0          |=          |0           |0        |
-+---------+-------+-----------+-----------+------------+---------+
 
 
 

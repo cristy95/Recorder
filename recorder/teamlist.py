@@ -1,7 +1,7 @@
 """DOCSTRING"""
 
 class TeamList(object):
-	"""List for the teams on a particular game"""
+    """List for the teams on a particular game"""
     def __init__(self):
         """Initializing the list"""
         self.teams = {}
