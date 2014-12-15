@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+	<title>Bank App</title>
+	</head>
+	
+	<body>
+		<form id="recorder-form1">
+		<label>Guinea: </label>
+			<input type="hidden" name="name" value="Guinea"/>
+			<input name="score" type="int"/>
+		<input type="submit"/>
+		</form>
+<br/>
+		<form id="recorder-form2">
+		<label>Pig: </label>
+			<input type="hidden" name="name" value="Pig"/>
+			<input name="score" type="int"/>
+		<input type="submit"/>
+		</form>
+
+
+{% if score1 %}
+Guinea: {{ score1 }}
+Pig:	{{ score2 }}
+{% endif %}
+
+</body>
+</html>
