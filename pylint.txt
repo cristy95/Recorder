@@ -1,2 +1,2 @@
-************* Module bank/
-bank/:1: [F0001(fatal), ] No module named bank/
+************* 
+/__init__.py:1: [F0010(parse-error), ] error while code parsing: Unable to load file '/__init__.py' ([Errno 2] No such file or directory: '/__init__.py')
