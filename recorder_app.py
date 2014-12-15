@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 "DOCSTRING"
 from flask import Flask, render_template, request
-from teamlist import TeamList
+from recorder.teamlist import TeamList
 
 APP = Flask(__name__)
 TEAMLIST = TeamList()

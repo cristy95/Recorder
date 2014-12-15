@@ -1,6 +1,6 @@
 import unittest
-from teamlist import TeamList
-from team import Team
+from recorder.teamlist import TeamList
+from recorder.team import Team
 
 class TestTeamList(unittest.TestCase):
 

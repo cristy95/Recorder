@@ -1,5 +1,5 @@
 import unittest
-from team import Team
+from recorder.team import Team
 
 class TestTeam(unittest.TestCase):
 	def test_team_is_created_with_0_points(self):
