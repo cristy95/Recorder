@@ -1,24 +1,4 @@
-************* Module Recorder.recorder
-recorder/__init__.py:1: [C0111(missing-docstring), ] Missing module docstring
 ************* Module Recorder.recorder.teamlist
-recorder/teamlist.py:4: [W0312(mixed-indentation), ] Found indentation with tabs instead of spaces
-recorder/teamlist.py:5: [W0312(mixed-indentation), ] Found indentation with tabs instead of spaces
-recorder/teamlist.py:7: [W0312(mixed-indentation), ] Found indentation with tabs instead of spaces
-recorder/teamlist.py:8: [W0312(mixed-indentation), ] Found indentation with tabs instead of spaces
-recorder/teamlist.py:10: [W0312(mixed-indentation), ] Found indentation with tabs instead of spaces
-recorder/teamlist.py:11: [W0312(mixed-indentation), ] Found indentation with tabs instead of spaces
-recorder/teamlist.py:13: [W0312(mixed-indentation), ] Found indentation with tabs instead of spaces
-recorder/teamlist.py:14: [W0312(mixed-indentation), ] Found indentation with tabs instead of spaces
-recorder/teamlist.py:15: [W0312(mixed-indentation), ] Found indentation with tabs instead of spaces
-recorder/teamlist.py:16: [W0312(mixed-indentation), ] Found indentation with tabs instead of spaces
-recorder/teamlist.py:17: [W0312(mixed-indentation), ] Found indentation with tabs instead of spaces
-recorder/teamlist.py:18: [W0312(mixed-indentation), ] Found indentation with tabs instead of spaces
-recorder/teamlist.py:19: [W0312(mixed-indentation), ] Found indentation with tabs instead of spaces
-recorder/teamlist.py:20: [W0312(mixed-indentation), ] Found indentation with tabs instead of spaces
-recorder/teamlist.py:21: [W0312(mixed-indentation), ] Found indentation with tabs instead of spaces
-recorder/teamlist.py:22: [W0312(mixed-indentation), ] Found indentation with tabs instead of spaces
-recorder/teamlist.py:23: [W0312(mixed-indentation), ] Found indentation with tabs instead of spaces
-recorder/teamlist.py:24: [W0312(mixed-indentation), ] Found indentation with tabs instead of spaces
 recorder/teamlist.py:3: [C0111(missing-docstring), TeamList] Missing class docstring
 recorder/teamlist.py:7: [C0111(missing-docstring), TeamList.add_team] Missing method docstring
 recorder/teamlist.py:10: [C0111(missing-docstring), TeamList.get_score] Missing method docstring
@@ -41,11 +21,11 @@ Messages by category
 +-----------+-------+---------+-----------+
 |type       |number |previous |difference |
 +===========+=======+=========+===========+
-|convention |6      |6        |=          |
+|convention |5      |5        |=          |
 +-----------+-------+---------+-----------+
 |refactor   |1      |1        |=          |
 +-----------+-------+---------+-----------+
-|warning    |21     |21       |=          |
+|warning    |3      |4        |-1.00      |
 +-----------+-------+---------+-----------+
 |error      |0      |0        |=          |
 +-----------+-------+---------+-----------+
@@ -55,13 +35,11 @@ Messages by category
 % errors / warnings by module
 -----------------------------
 
-+---------------------------+------+--------+---------+-----------+
-|module                     |error |warning |refactor |convention |
-+===========================+======+========+=========+===========+
-|Recorder.recorder.teamlist |0.00  |85.71   |0.00     |66.67      |
-+---------------------------+------+--------+---------+-----------+
-|Recorder.recorder.team     |0.00  |14.29   |100.00   |16.67      |
-+---------------------------+------+--------+---------+-----------+
++-----------------------+------+--------+---------+-----------+
+|module                 |error |warning |refactor |convention |
++=======================+======+========+=========+===========+
+|Recorder.recorder.team |0.00  |100.00  |100.00   |20.00      |
++-----------------------+------+--------+---------+-----------+
 
 
 
@@ -71,9 +49,9 @@ Messages
 +-----------------------+------------+
 |message id             |occurrences |
 +=======================+============+
-|mixed-indentation      |21          |
+|missing-docstring      |5           |
 +-----------------------+------------+
-|missing-docstring      |6           |
+|mixed-indentation      |3           |
 +-----------------------+------------+
 |too-few-public-methods |1           |
 +-----------------------+------------+
@@ -82,7 +60,7 @@ Messages
 
 Global evaluation
 -----------------
-Your code has been rated at -3.33/10 (previous run: -3.33/10, +0.00)
+Your code has been rated at 5.71/10 (previous run: 5.24/10, +0.48)
 
 Duplication
 -----------
@@ -97,13 +75,30 @@ Duplication
 
 
 
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |25     |86.21 |25       |=          |
++----------+-------+------+---------+-----------+
+|docstring |3      |10.34 |3        |=          |
++----------+-------+------+---------+-----------+
+|comment   |0      |0.00  |0        |=          |
++----------+-------+------+---------+-----------+
+|empty     |1      |3.45  |1        |=          |
++----------+-------+------+---------+-----------+
+
+
+
 Statistics by type
 ------------------
 
 +---------+-------+-----------+-----------+------------+---------+
 |type     |number |old number |difference |%documented |%badname |
 +=========+=======+===========+===========+============+=========+
-|module   |3      |3          |=          |66.67       |0.00     |
+|module   |3      |3          |=          |100.00      |0.00     |
 +---------+-------+-----------+-----------+------------+---------+
 |class    |2      |2          |=          |0.00        |0.00     |
 +---------+-------+-----------+-----------+------------+---------+
@@ -111,23 +106,6 @@ Statistics by type
 +---------+-------+-----------+-----------+------------+---------+
 |function |0      |0          |=          |0           |0        |
 +---------+-------+-----------+-----------+------------+---------+
-
-
-
-Raw metrics
------------
-
-+----------+-------+------+---------+-----------+
-|type      |number |%     |previous |difference |
-+==========+=======+======+=========+===========+
-|code      |25     |89.29 |25       |=          |
-+----------+-------+------+---------+-----------+
-|docstring |2      |7.14  |2        |=          |
-+----------+-------+------+---------+-----------+
-|comment   |0      |0.00  |0        |=          |
-+----------+-------+------+---------+-----------+
-|empty     |1      |3.57  |1        |=          |
-+----------+-------+------+---------+-----------+
 
 
 
