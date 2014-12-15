@@ -1,0 +1,27 @@
+Vision:
+	To help scorers record the scores of a basketball game.
+
+Mission:
+	To create an app that would record the scores of a basketball game.
+
+User Story:
+	1. As a scorer, I want to be able to record scores for two teams.
+	2. As a scorer, I want to be able to see the accumulated scores of both teams.
+
+Use Cases:
+	1. Record Scores
+		Description: Records the scores of both teams
+		Actor: Scorer
+		Pre-conditions: I visited the homepage.
+		Post-conditions: Score is recorded.
+		Main course:
+			a. The scorer enters the score for a team.
+			b. The system then records the score
+			c. The system then updates the score shown.
+		Exceptions:
+			b.1. If the team score is greater than 3.
+					Score is not recorded.
+					Re-enter score.
+			b.2. If the team score is less than 1.
+					Score is not recorded.
+					Re-enter score.
